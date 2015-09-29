@@ -1301,3 +1301,34 @@ blockquote.styled{
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
+.how_to {
+	background: rgba(90, 83, 83, 0) url(../img/pattern_green.png) repeat !important
+}
+.how_to .how_to_element {
+	width: 20%;
+	    
+}
+.how_to h3 {
+	color: #4D4D4D  !important;
+}
+.how_to p {
+	color: rgba(70, 63, 63, 0.27) !important;
+}
+.how_to h4 {
+    font-size: 15px !important;
+    color: #4E4E50 !important;
+}
+.question_row {
+	margin-top: 20px;
+}
+.thumbnail_select {
+	padding: 0 !important;
+	height: 20px;
+}
+.remove_right_padding {
+	padding-right: 0 !important;
+}
+.dis_inline {
+	display: inline;
+	padding-right: 20px;
+}

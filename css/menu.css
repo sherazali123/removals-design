@@ -12,7 +12,7 @@
 .main-menu ul li a {display: block; line-height: 20px;padding:10px;}
 			
 /*First level styles */			
-.main-menu > ul > li > a {color: #333;padding: 0 12px 20px  12px; font-size:13px; text-transform:uppercase;}
+.main-menu > ul > li > a {color: #333;padding: 0 20px 20px  20px; font-size:14px; text-transform:uppercase;}
 .sticky .main-menu > ul > li > a {color: #333;}
 .main-menu > ul > li:hover > a {color: #629976;}
 
