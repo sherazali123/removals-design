@@ -200,6 +200,7 @@ header{
 	width:100%;
 	padding:10px 0 0 0;
 	background-color:#fff;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	z-index:99999;
 	position:relative;
 }
@@ -1331,4 +1332,55 @@ blockquote.styled{
 .dis_inline {
 	display: inline;
 	padding-right: 20px;
+}
+.sm-label  {
+	font-weight: 200;
+    font-size: 12px;
+}
+.modal.custom {
+
+}
+
+.modal.custom .modal-content {
+	border-radius: 0px;
+}
+.large_p {
+	 font-size: 16px;
+    line-height: 24px;
+}
+.cost-table td {
+	text-align: left;
+	font-size: 14px;
+    padding: 10px !important;
+}
+td.sText {
+	color: #468847;
+    background-color: #dff0d8!important;
+}
+td.costtd{
+	text-align: right;
+	    color: #7B7065;
+    background-color: #f9f9f9!important;
+}
+span.totalCostText, span.totalCost {
+
+    padding: 13px;
+}
+.totalCostText {
+	 color: #FFF;
+    text-align: center;
+    background-color: #382424;
+    font-weight: bolder;
+}
+.totalCost{
+	color: #222;
+    background-color: #FFF;
+}
+.bankInfo img {
+	width: 120px;
+}
+.bankInfo label {
+	font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
 }
