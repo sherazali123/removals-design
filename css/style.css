@@ -1384,3 +1384,19 @@ span.totalCostText, span.totalCost {
     font-weight: 400;
     padding-top: 10px;
 }
+
+.tableHeader {
+	padding: 20px 0;
+}
+.cPagination>li>a, .pagination>li>span {
+    color: #83C99F;
+}
+.cPagination>.active>a, .cPagination>.active>a:focus, .cPagination>.active>a:hover, .cPagination>.active>span, .cPagination>.active>span:focus, .cPagination>.active>span:hover {
+    background-color: #629976;
+    border-color: rgba(98, 153, 118, 0.62);
+}
+.cPagination>li>a:focus, .cPagination>li>a:hover, .cPagination>li>span:focus, .cPagination>li>span:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-color: #222;
+}
