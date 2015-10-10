@@ -30,11 +30,22 @@
     
     <!-- SPECIFIC CSS -->
     <link href="css/jquery.switch.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+
+
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .list-group panel.active {
+          background-color: #030;;
+          border-color: #aed248;
+        }
+
+    </style>
 
 </head>
 
@@ -58,24 +69,7 @@
     <div class="layer"></div>
     <!-- Mobile menu overlay mask -->
 
-    <!-- Header================================================== -->
     <header>
-        <div id="top_line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                    <span id="tag_line">"The art of moving since 1998"</span>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <ul id="top_links">
-                            <li><a href="http://themeforest.net/item/removals-removals-and-moving-template/11242925?ref=ansonika" style="color:#663466">PURCHASE THIS TEMPLATE</a></li>
-                            <li><a href="mailto:info@removals.com">info@removals.com</a></li>
-                        </ul>
-                    </div>
-                </div><!-- End row -->
-            </div><!-- End container-->
-        </div><!-- End top line-->
-        
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3">
@@ -91,52 +85,24 @@
                         </div>
                         <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
                         <ul>
-                        <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                                <ul>
-                                    <li><a href="index-2.html">Home version 1</a></li>
-                                    <li><a href="index_2.html">Home version 2</a></li>
-                                </ul>
+                            <li class="submenu">
+                                <a href="index.html">Quotation </a>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Removals <i class="icon-down-open-mini"></i></a>
-                                <ul>
-                                    <li><a href="domestic_removals.html">Domestic removals</a></li>
-                                    <li><a href="international_removals.html">International removals</a></li>
-                                    <li><a href="special_furnitures.html">Special Furnitures</a></li>
-                                </ul>
+                                <a href="box_rental.html" >Box Rental </a>
+                              
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Services <i class="icon-down-open-mini"></i></a>
-                                <ul>
-                                    <li><a href="reassembly.html">Reassembly &amp; Packing</a></li>
-                                    <li><a href="deposit.html">Deposit</a></li>
-                                    <li><a href="cleaning.html">Cleaning</a></li>
-                                </ul>
+                                <a href="classified_ad.html">Classified Ad </a>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Quotation <i class="icon-down-open-mini"></i></a>
-                            <ul>
-                                    <li><a href="quotation.html">Working quotation</a></li>
-                                    <li><a href="quotation_wizard.html">Working quotation wizard</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="fleet.html">The fleet</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About us</a>
+                                <a href="blog.html" >Blog </a>
+                              
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Pages <i class="icon-down-open-mini"></i></a>
-                            <ul>
-                            		<li><a href="contacts.html">Contact us</a></li>
-                                    <li><a href="tips.html">Tips and Faq</a></li>
-                                    <li><a href="shortcodes.html">Shortcodes</a></li>
-                                    <li><a href="icon_pack_1.html">Icon Pack 1</a></li>
-                                    <li><a href="icon_pack_2.html">Icon Pack 2</a></li>
-                                </ul>
+                                <a href="about.html">About Us </a>
                             </li>
+                                
                         </ul>
                     </div><!-- End main-menu -->
                 </nav>
@@ -162,14 +128,85 @@
 				</div>
 			</div>
 		</section><!-- End section -->
-        
+
+     
         <div class="container margin_60">
         	<div class="row">
                 <div class="col-md-9">
-                	  <form id="custom" action="#" method="POST" class="add_bottom_30">
-      
-                        <input id="website" name="website" type="text" value="" ><!-- Leave for security protection, read docs for details. Delete this comment before to publish. -->
+                        <form id="custom" action="#" method="POST" class="add_bottom_30">
+                        <input id="website" name="website" type="text" value="">
                         <fieldset title="Step 1">
+                        <legend>Choose a Service</legend>
+                        <div class="row">
+                        <div id="accordion">
+                                <div class="panel-group panel col-md-4">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="collapse('one');">Economic Service<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="collapse">
+                                    <li class="list-group-item">Transpotation</li>
+                                </div>
+                                </div>
+                                <div class="panel-group panel col-md-4">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="collapse('two');" >Standard Service<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="collapse">
+                                    <li class="list-group-item">Transpotation</li>
+                                    <li class="list-group-item">Loading</li>
+                                    <li class="list-group-item">Unlaoding</li>  
+                                </div>
+                                </div>
+                                <div class="panel-group panel col-md-4">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" onclick="collapse('three');">Premium Service<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="collapse">
+                                        <li class="list-group-item">Transpotation</li>
+                                        <li class="list-group-item">Loading</li>
+                                        <li class="list-group-item">Unlaoding</li>
+                                        <li class="list-group-item">Packing</li>
+                                        <li class="list-group-item">Unpacking</li>
+                                 </div>
+                                 </div>
+                        </div>
+                       </div><!-- End row-->
+
+                       <div id="collapseAlertOne" role="tabpanel" class="collapse">
+                                  <div class="alert alert-success" role="alert" id="myAlert1">
+                                          <strong>Only Transpotation (Cheapest Option!) </strong> We drive, customers load and unload. Before the drivers arrival please ensure that all items are brought down to the ground floor.
+                                  </div>
+                       </div>
+                       <div id="collapseAlertTwo" role="tabpanel" class="collapse">
+                                  <div class="alert alert-success" role="alert" id="myAlert2">
+                                          <strong>Need Help?</strong> The driver will help you to load and unload. This service is good for customers who need help to load and unload their items. You and the driver will load
+										  and unload together.
+                                  </div>
+                       </div>
+                       <div id="collapseAlertThree" role="tabpanel" class="collapse">
+                                  <div class="alert alert-success" role="alert" id="myAlert3">
+                                          <strong>Need Full service?</strong>  We pack, load, unload and unpack. This service is good for customers who do not have time to prepare for moving.
+                                  </div>
+                       </div>
+
+
+                      
+
+
+
+                    
+
+
+
+
+                    </fieldset><!-- End Step one -->
+                        <fieldset title="Step 2">
                           <legend>Personal info</legend>
                           <div class="row">
                                 <div class="col-md-6 col-sm-6">
@@ -199,60 +236,54 @@
                                     </div>
                                 </div>
                             </div><!-- End row -->
-                            <hr>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Describe your property type as much as possible:rooms, list of furnitures, volumes, etc...</label>
-                                        <textarea name="message_general" id="message_general" style="height:100px" class="form-control"></textarea>
+                                <div class="col-md-3 col-sm-6">
+                                	<div class="form-group">
+                                        <label>Moving Date</label>
+                                        <input type="datetime" class="form-control" id="DateTime_quote" name="DateTime_quote">
                                     </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                	<div class="form-group">
+                                        <label>Moving Time</label>
+                                        <input type="datetime" class="form-control" id="DateTime_quote" name="DateTime_quote">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                		<label>Passengers</label>
+	                                    <div class="form-group">
+	                                        <select class="form-control" name="floor_pickup" id="floor_pickup">
+	                                            <option value="" selected>Select Passengers</option>
+	                                            <option value="First floor">None</option>
+	                                            <option value="Second floor">1 Passenger</option>
+	                                            <option value="Third floor">2 Passengers</option>
+	                                        </select>
+	                                    </div>
+	                            <div class="alert alert-info" role="alert">If the delivery destination is greater than 20Km, MIK recommends that only 1 passenger rides with the driver.</div>
                                 </div>
                             </div><!-- End row -->
-                        </fieldset><!-- End Step one -->
+                            <hr>
+                        </fieldset><!-- End Step two -->
                         
-                        <fieldset title="Step 2" >
-                          <legend>Pick up Address</legend>
+                        <fieldset title="Step 3" >
+                          <legend>Address</legend>
+                          <h4>Pickup Address</h4>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <label>Country</label>
-                                        <select class="form-control" name="country_pickup" id="country_pickup">
-                                            <option value="" selected>Select your country</option>
-                                            <option value="Europe">Europe</option>
-                                            <option value="United states">United states</option>
-                                            <option value="Asia">Asia</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <label>City</label>
+                                        <label>Address</label>
                                         <input type="text" id="city_pickup" name="city_pickup" class="form-control">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <label>Street line</label>
+                                        <label>Building Name</label>
                                         <input type="text" id="street_pickup" name="street_pickup" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>State</label>
-                                        <input type="text" id="state_pickup" name="state_pickup" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Postal code</label>
-                                        <input type="text" id="postal_code_pickup" name="postal_code_pickup" class="form-control">
-                                    </div>
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Floor</label>
                                         <select class="form-control" name="floor_pickup" id="floor_pickup">
@@ -261,6 +292,12 @@
                                             <option value="Second floor">Second floor</option>
                                             <option value="Other">Other</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Room Number</label>
+                                        <input type="text" id="city_pickup" name="city_pickup" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -274,51 +311,24 @@
                                     </div>
                                 </div>
                             </div><!--End row -->
-                        </fieldset><!-- End Step two -->
-                        
-                        <fieldset title="Step 3" >
-                          <legend>Drop off Address</legend>
+                            <hr>
+                          <h4>Delivery Address</h4>
                           <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <label>Country</label>
-                                    <select class="form-control" name="country_delivery" id="country_delivery">
-                                        <option value="" selected>Select your country</option>
-                                        <option value="Europe">Europe</option>
-                                        <option value="United states">United states</option>
-                                        <option value="Asia">Asia</option>
-                                    </select>
+                                    <label>Address</label>
+                                    <input type="text" id="city_pickup" name="city_pickup" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <label>City</label>
+                                    <label>Building Name</label>
                                     <input type="text" id="city_delivery" name="city_delivery" class="form-control">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label>Street line</label>
-                                    <input type="text" id="street_delivery" name="street_delivery" class="form-control">
-                                </div>
-                            </div>
                             <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>State</label>
-                                    <input type="text" id="state_delivery" name="state_delivery" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Postal code</label>
-                                    <input type="text" id="postal_code_delivery" name="postal_code_delivery" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Floor</label>
                                     <select class="form-control" name="floor_delivery" id="floor_delivery">
@@ -328,6 +338,12 @@
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Room Number</label>
+                                        <input type="text" id="city_pickup" name="city_pickup" class="form-control">
+                                    </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -340,78 +356,672 @@
                                 </div>
                             </div>
                         </div><!--End row -->
-                        </fieldset><!-- End Step three -->
+                        <div class="row">
+                            <div class="col-md-10">
+	                            <div class="alert alert-info" role="alert">If you have an additional information, please provide the details in the notes section.</div>
+	                        </div>
+                        </div>
+                        </fieldset><!-- End Step Three -->
                         
-                        <fieldset title="Step 4" >
-                          <legend>Options</legend>
+                        <fieldset title="Step 5" >
+                          <legend>Notes</legend>
                           <h5 style="margin-top:0">Select optional services</h5>
                           <p class="add_bottom_45">Ei aliquip regione his, errem hendrerit et sea, elit definiebas cu mel. Sea illud aeque te, has cu brute iuvaret molestiae. Omnium omittam ei nec. Inani libris equidem eu vel, minim equidem vis ad, nam eu duis graeco reprehendunt. Ut dicam graeci sea, enim corrumpit at vix.</p>
                           <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group options">
-                                    <strong>Packing service</strong>
-                                        <label class="switch-light switch-ios pull-right">
-                                        <input type="checkbox" name="option_1" id="option_1" checked value="Yes">
-                                        <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        </span>
-                                        <a></a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group options">
-                                        <strong>Reassembling</strong>
-                                        <label class="switch-light switch-ios pull-right">
-                                        <input type="checkbox" name="option_2" id="option_2" checked value="Yes">
-                                        <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        </span>
-                                        <a></a>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group options">
-                                        <strong>Cleaning</strong>
-                                        <label class="switch-light switch-ios pull-right">
-                                        <input type="checkbox" name="option_3" id="option_3" value="Yes">
-                                        <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        </span>
-                                        <a></a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group options">
-                                        <strong>Short term deposit</strong>
-                                        <label class="switch-light switch-ios pull-right">
-                                            <input type="checkbox" name="option_4" id="option_4" value="Yes">
-                                            <span>
-                                            <span>No</span>
-                                            <span>Yes</span>
-                                            </span>
-                                            <a></a>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div><!--End row -->
-                        </fieldset><!-- End Step four -->
-                        
-                        <fieldset title="Step 5">
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_55-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Box</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/humano2/128x128/apps/file-roller.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Box</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/luggage-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Luggage</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/luggage-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Luggage</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/app-types-in-grey/128/app_type_catalog_512px_GREY.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Shelf</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/app-types-in-grey/128/app_type_catalog_512px_GREY.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Shelf</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://image.freepik.com/free-icon/tv-stand_318-81834.jpg" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>TV Stand</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/rental-icon/240/bed-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>King Bed</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/rental-icon/240/bed-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Queen Bed</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/rental-icon/240/bed-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Single Bed</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/wardrobe.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Wardrobe</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn1.iconfinder.com/data/icons/nuove/128x128/apps/file-manager.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Drawer</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn1.iconfinder.com/data/icons/nuove/128x128/apps/file-manager.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Drawer</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/barbers_chair.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Chair</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/sofa-chair-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>1 Seater</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/sofa.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>2 Seater</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/table.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Dressing Table</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/IsoIcons_Workspace/128/Workstation_by_Artdesigner.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Desks & Table</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/IsoIcons_Workspace/128/Workstation_by_Artdesigner.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Desk & Table</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/filing_cabinet.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Cabinet</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/filing_cabinet.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Cabinet</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/home-electronics-line/2048/1807_-_Refrigerator-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small Refrigerator</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/home-electronics-line/2048/1807_-_Refrigerator-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big Refrigerator</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn0.iconfinder.com/data/icons/home-electronics-line/2048/1807_-_Refrigerator-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>2-Door Refrigerator</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/tv_show-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Small TV</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/tv_show-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Big TV</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/128/television.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Wall TV</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/laptop-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Laptop/Computer</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/washing_machine.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Washing Machine</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/microwave.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Microwave</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn3.iconfinder.com/data/icons/hotel-restaurant-set-1/512/Air_Conditioner-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>AC (Wall type)</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                                <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn3.iconfinder.com/data/icons/hotel-restaurant-set-1/512/Air_Conditioner-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>AC (Stand type)</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn1.iconfinder.com/data/icons/vector-office-crew-and-items/500/water-cooler-128.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Water Cooler</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                               <div class="col-xs-12 col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/fan.png" alt="...">
+                                  <div style="text-align:center;">
+                                        <div style="display:inline-block;">
+                                                <div class="caption">
+                                                <h6>Fan</h6>
+                                                <select class="selectpicker" data-width="100%">
+                                                    <optgroup label="Items">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </optgroup>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        </div>
+                               </div>
+                               </div>
+                           </div> <!-- End Row -->
                           <legend>Message</legend>
                           <div class="form-group">
-							<label>Write your notes or message</label>
+							               <label>Write your notes or message</label>
                             <textarea name="message_quote" id="message_quote" style="height:100px" class="form-control"></textarea>
-						  </div>
+						                 </div>
                           <p><input name="terms" type="checkbox" value="Yes"> <a data-toggle="modal" data-target="#myModal" href="#" >I accept terms and condition </a></p>
-                        </fieldset><!-- End Step three -->
+                        </fieldset><!-- End Step six -->
                         
                         <input type="submit" class="finish" value="Finish!" />
                       </form>
@@ -513,6 +1123,62 @@
 <script src="js/jquery.validate.js"></script>
 <script src="js/jquery.stepy.min.js"></script> 
 <script src="js/quotation-validate.js"></script> 
+<script src="js/bootstrap-select.js"></script>
+
+
+
+<script>
+     
+
+ function collapse(id){
+    if(id=='one'){
+
+        $('#collapseAlertOne').collapse('toggle');
+        $('#collapseAlertTwo').collapse('hide');
+        $('#collapseAlertThree').collapse('hide');
+
+    }else if(id=='two'){
+
+    	$('#collapseAlertTwo').collapse('toggle');
+        $('#collapseAlertOne').collapse('hide');
+        $('#collapseAlertThree').collapse('hide');
+
+    } else if(id=='three'){
+
+        $('#collapseAlertThree').collapse('toggle');
+        $('#collapseAlertTwo').collapse('hide');
+        $('#collapseAlertOne').collapse('hide');
+
+
+
+
+
+    }
+ }
+
+
+</script>
+
+
+<script src="js/jquery.validate.js"></script>
+<script>
+  $("#quotation").validate();
+</script>
+
+<script>
+
+$(document).ready(function(){
+        
+        
+    $('#collapseAlertOne').collapse({'toggle': false});
+    $('#collapseAlertTwo').collapse({'toggle': false});
+    $('#collapseAlertThree').collapse({'toggle': false});
+});
+</script>
+
+
+
+
 
 </body>
 </html>
