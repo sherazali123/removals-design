@@ -156,12 +156,11 @@ a.btn_quote{
 	text-transform:uppercase;
 	font-weight:bold;
 	border:2px solid #fff;
-	float:right;
 	white-space:nowrap;
 	text-shadow:none;
 }
 a.btn_quote:hover{
-	color:#629976;
+	color:#01576D;
 	background:#fff;
 }
 a.btn_full, .btn_full{
@@ -393,7 +392,6 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	color:#fff;
 }
 #get_quote.green {
-	background:#629976 url(../img/pattern_green.png) repeat;
 	padding:30px 0;
 	color:#fff;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
