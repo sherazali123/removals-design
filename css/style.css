@@ -296,7 +296,7 @@ footer a{
 	color:#fff;
 }
 footer a:hover{
-	color:#82ca9c;
+	color:#06728D;
 }
 footer ul{
 	margin:0;
@@ -1386,8 +1386,8 @@ span.totalCostText, span.totalCost {
     color: #83C99F;
 }
 .cPagination>.active>a, .cPagination>.active>a:focus, .cPagination>.active>a:hover, .cPagination>.active>span, .cPagination>.active>span:focus, .cPagination>.active>span:hover {
-    background-color: #629976;
-    border-color: rgba(98, 153, 118, 0.62);
+       background-color: #06728D;
+    border-color: rgb(83, 161, 218);
 }
 .cPagination>li>a:focus, .cPagination>li>a:hover, .cPagination>li>span:focus, .cPagination>li>span:hover {
     color: #FFFFFF;
