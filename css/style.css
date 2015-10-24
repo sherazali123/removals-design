@@ -1033,7 +1033,7 @@ ul.list_2 li:before {
   font-family: 'ElegantIcons';
   font-size:14px;
   content: "\5c";
-  color:#629976;
+  color:#06728D;
   position:absolute;
   left:0;
   top:0;
@@ -1407,4 +1407,11 @@ label.cost {
 	    color: #C0272D;
     font-weight: 700;
     font-size: 13px;
+}
+.add_new_add h3 {
+    font-size: 18px;
+    color: #06728D;
+}
+.ad_heading {
+    color: #06728D;
 }
