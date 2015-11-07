@@ -305,9 +305,8 @@ footer ul{
 }
 #social_footer{
 	text-align:center;
-	border-top:1px dotted rgba(255,255,255,0.2);
-	padding-top:30px;
-	margin-top:10px;
+	padding-top:0px;
+	margin-top:0px;
 }
 #social_footer p{
 	font-size:12px;
